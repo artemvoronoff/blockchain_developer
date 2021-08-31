@@ -1,0 +1,46 @@
+Command Parameters:
+gettransaction "txid"
+
+Arguments:
+1. "txid"                  (string, required) The transaction id
+
+Execute Command:
+gettransaction ae74538baa914f3799081ba78429d5d84f36a0127438e9f721dff584ac17b346
+
+Result:
+{
+ "amount" : 0.00000000,
+ "fee" : -0.00050000,
+ "confirmations" : 0,
+ "txid" : "ae74538baa914f3799081ba78429d5d84f36a0127438e9f721dff584ac17b346",
+ "time" : 1392666702,
+ "timereceived" : 1392666702,
+ "details" : [
+ {
+ "account" : "",
+ "address" : "2NFK8YHKT6hPPTDKTPP3c5bx7oPGrYhzj2y",
+ "category" : "send",
+ "amount" : -0.03000000,
+ "fee" : -0.00050000
+ },
+ {
+ "account" : "",
+ "address" : "2Mzxx8wGAmQQyCCrb2vXP4yxaYY9s9nepfy",
+ "category" : "send",
+ "amount" : -0.01950000,
+ "fee" : -0.00050000
+ },
+ {
+ "account" : "",
+ "address" : "2NFK8YHKT6hPPTDKTPP3c5bx7oPGrYhzj2y",
+ "category" : "receive",
+ "amount" : 0.03000000
+ },
+ {
+ "account" : "",
+ "address" : "2Mzxx8wGAmQQyCCrb2vXP4yxaYY9s9nepfy",
+ "category" : "receive",
+"amount" : 0.01950000
+ }
+ ]
+}
