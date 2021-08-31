@@ -19,3 +19,16 @@ listunspent
  }
 ...
 ]
+
+
+
+
+gettxout "txid" n
+
+Args{
+"tdid" (string, required) the transaction id
+"n" (numeric, required) vout number
+
+To get the 0th index of the tdix e787..
+
+gettxout e787a27bda32c8b54ee501be46d2cfcd47c1566c8ef6ee339bdb7cd5c82b701c 0
