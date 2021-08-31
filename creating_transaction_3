@@ -1,0 +1,25 @@
+We will use the createrawtransaction commond
+
+createrawtransaction '[{"txid":"TXID","vout": VOUT}]’’{“to_address”:amount1, “from_address”:amount2}’
+
+Build Out Command:
+txid: e787a27bda32c8b54ee501be46d2cfcd47c1566c8ef6ee339bdb7cd5c82b701c
+
+vout: 0
+
+to_address: 2NFK8YHKT6hPPTDKTPP3c5bx7oPGrYhzj2y
+
+from_address: 2Mzxx8wGAmQQyCCrb2vXP4yxaYY9s9nepfy
+
+amount1: .030 BTC being sent to "to_address"
+
+amount2: 0.0195 BTC being sent back to the "from_address" 
+
+
+EXECUTE COMMAND:
+createrawtransaction '[{"txid": "e787a27bda32c8b54ee501be46d2cfcd47c1566c8ef6ee339bdb7cd5c82b701c", "vout":0}]' '{"2NFK8YHKT6hPPTDKTPP3c5bx7oPGrYhzj2y":0.030, "2Mzxx8wGAmQQyCCrb2vXP4yxaYY9s9nepfy":0.0195}'
+
+
+
+RESULT (hex string):
+ 02000000011c702bc8d57cdb9b33eef68e6c56c147cdcfd246be01e54eb5c832da7ba287e70000000000ffffffff02c0c62d000000000017a914f20fe211102535e3c37bb0e659099387ddc035b58730c11d000000000017a91454ad1e8953876c90d3fc15798c687835ab3d3aee8700000000
