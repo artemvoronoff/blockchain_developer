@@ -1,0 +1,78 @@
+...
+ {
+      "txid": "e787a27bda32c8b54ee501be46d2cfcd47c1566c8ef6ee339bdb7cd5c82b701c",
+      "vout": 0,
+      "scriptSig": {
+        "asm": "",
+        "hex": ""
+      },
+      "sequence": 4294967295
+    }
+    
+    Command Parameters:
+    signrawtransactionwithwallet "hexstring"
+    
+    Execute Command:
+    signrawtransactionwithwallet 02000000011c702bc8d57cdb9b33eef68e6c56c147cdcfd246be01e54eb5c832da7ba287e70000000000ffffffff02c0c62d000000000017a914f20fe211102535e3c37bb0e659099387ddc035b58760e316000000000017a91454ad1e8953876c90d3fc15798c687835ab3d3aee8700000000 
+    
+    Result:
+    {
+"hex": "020000000001011c702bc8d57cdb9b33eef68e6c56c147cdcfd246be01e54eb5c832da7ba287e70000000017160014c794ee65db89222f408dfe1728d214f2496d7a72ffffffff02c0c62d000000000017a914f20fe211102535e3c37bb0e659099387ddc035b58730c11d000000000017a91454ad1e8953876c90d3fc15798c687835ab3d3aee8702483045022100dbf89096427b02c27a799a1d42fca9066bb1706d6874e7255a89084d7c39054c02203c792d0590e068d932966a3d5a84a099492d6975d8fe76b0ca191e20d2a76e800121039c508c50597896b7d67efadf03864d3cee14941253fea08a7abc596479036f8000000000",
+  "complete": true
+}
+
+Execute Command:
+decoderawtransaction 020000000001011c702bc8d57cdb9b33eef68e6c56c147cdcfd246be01e54eb5c832da7ba287e70000000017160014c794ee65db89222f408dfe1728d214f2496d7a72ffffffff02c0c62d000000000017a914f20fe211102535e3c37bb0e659099387ddc035b58730c11d000000000017a91454ad1e8953876c90d3fc15798c687835ab3d3aee8702483045022100dbf89096427b02c27a799a1d42fca9066bb1706d6874e7255a89084d7c39054c02203c792d0590e068d932966a3d5a84a099492d6975d8fe76b0ca191e20d2a76e800121039c508c50597896b7d67efadf03864d3cee14941253fea08a7abc596479036f8000000000 
+
+Result:
+{
+  "txid": "0b6672b1659752a92ae109b4abc936adf7e57a97637a6231d84691bca78466d4",
+  "hash": "51f05787e966660c2ed9cda5ef9762d336e6d7ae6f169869ee01846117e555a7",
+  "version": 2,
+  "size": 248,
+  "vsize": 166,
+  "locktime": 0,
+  "vin": [
+    {
+      "txid": "e787a27bda32c8b54ee501be46d2cfcd47c1566c8ef6ee339bdb7cd5c82b701c",
+      "vout": 0,
+      "scriptSig": {
+        "asm": "0014c794ee65db89222f408dfe1728d214f2496d7a72",
+        "hex": "160014c794ee65db89222f408dfe1728d214f2496d7a72"
+      },
+      "txinwitness": [
+        "3045022100dbf89096427b02c27a799a1d42fca9066bb1706d6874e7255a89084d7c39054c02203c792d0590e068d932966a3d5a84a099492d6975d8fe76b0ca191e20d2a76e8001",
+        "039c508c50597896b7d67efadf03864d3cee14941253fea08a7abc596479036f80"
+      ],
+      "sequence": 4294967295
+    }
+  ],
+  "vout": [
+    {
+      "value": 0.03000000,
+      "n": 0,
+      "scriptPubKey": {
+        "asm": "OP_HASH160 f20fe211102535e3c37bb0e659099387ddc035b5 OP_EQUAL",
+        "hex": "a914f20fe211102535e3c37bb0e659099387ddc035b587",
+        "reqSigs": 1,
+        "type": "scripthash",
+        "addresses": [
+          "2NFK8YHKT6hPPTDKTPP3c5bx7oPGrYhzj2y"
+        ]
+      }
+    },
+    {
+      "value": 0.01950000,
+      "n": 1,
+      "scriptPubKey": {
+        "asm": "OP_HASH160 54ad1e8953876c90d3fc15798c687835ab3d3aee OP_EQUAL",
+        "hex": "a91454ad1e8953876c90d3fc15798c687835ab3d3aee87",
+        "reqSigs": 1,
+        "type": "scripthash",
+        "addresses": [
+          "2Mzxx8wGAmQQyCCrb2vXP4yxaYY9s9nepfy"
+        ]
+      }
+    }
+  ]
+}
