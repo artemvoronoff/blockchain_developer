@@ -1,0 +1,57 @@
+Command Parameters:
+decoderawtransaction "hexstring"
+
+Arguments:
+1. "hexstring"      (string, required) The transaction hex string
+
+Execute Command:
+decoderawtransaction 02000000011c702bc8d57cdb9b33eef68e6c56c147cdcfd246be01e54eb5c832da7ba287e70000000000ffffffff02c0c62d000000000017a914f20fe211102535e3c37bb0e659099387ddc035b58730c11d000000000017a91454ad1e8953876c90d3fc15798c687835ab3d3aee8700000000
+
+Result:
+{
+  "txid": "655419a854bdb808fb7cc3a68b8aab372e944ca028001ea247cead3ed00472eb",
+  "hash": "655419a854bdb808fb7cc3a68b8aab372e944ca028001ea247cead3ed00472eb",
+  "version": 2,
+  "size": 115,
+  "vsize": 115,
+  "locktime": 0,
+  "vin": [
+    {
+      "txid": "e787a27bda32c8b54ee501be46d2cfcd47c1566c8ef6ee339bdb7cd5c82b701c",
+      "vout": 0,
+      "scriptSig": {
+        "asm": "",
+        "hex": ""
+      },
+      "sequence": 4294967295
+    }
+  ],
+  "vout": [
+    {
+      "value": 0.03000000,
+      "n": 0,
+      "scriptPubKey": {
+        "asm": "OP_HASH160 f20fe211102535e3c37bb0e659099387ddc035b5 OP_EQUAL",
+        "hex": "a914f20fe211102535e3c37bb0e659099387ddc035b587",
+        "reqSigs": 1,
+        "type": "scripthash",
+        "addresses": [
+          "2NFK8YHKT6hPPTDKTPP3c5bx7oPGrYhzj2y"
+        ]
+      }
+    },
+    {
+      "value": 0.01950000,
+      "n": 1,
+      "scriptPubKey": {
+        "asm": "OP_HASH160 54ad1e8953876c90d3fc15798c687835ab3d3aee OP_EQUAL",
+        "hex": "a91454ad1e8953876c90d3fc15798c687835ab3d3aee87",
+        "reqSigs": 1,
+        "type": "scripthash",
+        "addresses": [
+          "2Mzxx8wGAmQQyCCrb2vXP4yxaYY9s9nepfy"
+        ]
+      }
+    }
+  ]
+}
