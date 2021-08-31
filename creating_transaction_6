@@ -1,0 +1,15 @@
+Command Parameters:
+sendrawtransaction "hexstring" ( allowhighfees )
+
+Arguments:
+1. "hexstring"    (string, required) The hex string of the raw transaction)
+2. allowhighfees    (boolean, optional, default=false) Allow high fees
+
+Results:
+"hex"             (string) The transaction hash in hex
+
+Execute Command:
+sendrawtransaction 020000000001011c702bc8d57cdb9b33eef68e6c56c147cdcfd246be01e54eb5c832da7ba287e70000000017160014c794ee65db89222f408dfe1728d214f2496d7a72ffffffff02c0c62d000000000017a914f20fe211102535e3c37bb0e659099387ddc035b58730c11d000000000017a91454ad1e8953876c90d3fc15798c687835ab3d3aee8702483045022100dbf89096427b02c27a799a1d42fca9066bb1706d6874e7255a89084d7c39054c02203c792d0590e068d932966a3d5a84a099492d6975d8fe76b0ca191e20d2a76e800121039c508c50597896b7d67efadf03864d3cee14941253fea08a7abc596479036f8000000000
+
+Result:
+ae74538baa914f3799081ba78429d5d84f36a0127438e9f721dff584ac17b346
